@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+{% load static %}
+<head>
+    <title>{% block title %} Wuxia Island{% endblock %}</title>
+    {% include 'parciais/_head.html' %}
+</head>
+
+<body>
+
+{% include 'parciais/_navbar.html' %}
+<!-- Page content-->
+<div class="container mt-5">
+{% block conteudo %}{% endblock %}
+</div>
+{% include 'parciais/_footer.html' %}
+
+</body>
+</html>
